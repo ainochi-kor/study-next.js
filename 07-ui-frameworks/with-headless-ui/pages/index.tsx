@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
-import cx from "classnames";
+// import cx from "classnames";
 
 const entries = [
   {
@@ -25,7 +25,7 @@ const { Button, Items, Item } = Menu;
 
 const MenuEntry = (props: typeof entries[0]) => (
   <Item disabled={!props.enabled}>
-    {({ active }) => {
+    {/* {({ active }) => {
       const classNames = cx("w-full", "p-2", "rounded-lg", "mt-2", "mb-2", {
         "opacity-50": !props.enabled,
         "bg-blue-600": active,
@@ -37,7 +37,7 @@ const MenuEntry = (props: typeof entries[0]) => (
           {props.name}
         </Link>
       );
-    }}
+    }} */}
   </Item>
 );
 
