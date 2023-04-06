@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import data from "../../../data/articles";
+import data from "../../../src/data/articles";
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   const id = req.query.id;
