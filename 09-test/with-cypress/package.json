@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "cypress": "cypress run"
+    "cypress": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress"
   },
   "dependencies": {
     "@types/node": "18.15.11",
