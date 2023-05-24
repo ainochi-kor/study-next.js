@@ -1,4 +1,4 @@
-{
+module.exports = {
   "root": true,
   "env": {
     "browser": true,
@@ -20,8 +20,11 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["tsconfig.json"]
+    "project": ["tsconfig.json"],
+    "createDefaultProgram": true,
+    "tsconfigRootDir": __dirname,
   },
+  "ignorePatterns": ["dist/", "node_modules/"],
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/react-in-jsx-scope": "off",
